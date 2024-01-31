@@ -67,6 +67,8 @@ section {
 }
 
 section h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
     font-size: 2rem;
 }
 
@@ -108,9 +110,6 @@ section#about {
     background: rgb(197, 83, 235) no-repeat center center/cover;
 }
 
-section#about li {
-    list-style: none;
-}
 
 section#about li img {
     width: 1000px;
@@ -120,9 +119,6 @@ section#about li img {
     border-color: black;
     list-style: none;
     margin-top: 60px;
-
-
-
 }
 
 
@@ -133,6 +129,19 @@ section#projects {
 section#resume {
     background: rgb(241, 161, 217) no-repeat center center/cover;
 }
+
+section#resume li iframe {
+    list-style: none;
+    margin-top: 0px;
+    width: 900px;
+    height: 600px;
+    border-width: 2px;
+    border-color: black;
+
+
+}
+
+
 section#contact {
     background: rgb(247, 199, 235) no-repeat center center/cover;
 }
