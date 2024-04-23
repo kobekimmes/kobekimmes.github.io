@@ -87,7 +87,8 @@ section li button {
 }
 
 section li button:hover {
-    opacity: 0.65;
+    opacity: 0.25;
+    
 
 }
 
@@ -103,11 +104,11 @@ section p {
 
 
 section#home {
-    background: rgb(132, 1, 245) no-repeat center center/cover;
+    background: rgb(197, 83, 200) no-repeat center center/cover;
 
 }
 section#about {
-    background: rgb(197, 83, 235) no-repeat center center/cover;
+    background: rgb(197, 83, 210) no-repeat center center/cover;
 }
 
 
@@ -124,24 +125,28 @@ section#about li img {
 
 
 section#projects {
-    background: rgb(236, 102, 236) no-repeat center center/cover;
-}
-section#resume {
-    background: rgb(241, 161, 217) no-repeat center center/cover;
+    background: rgb(197, 83, 220) no-repeat center center/cover;
 }
 
-section#resume li iframe {
-    list-style: none;
-    margin-top: 0px;
-    width: 900px;
-    height: 600px;
-    border-width: 2px;
+section#projects github-repo-card {
+    width: 50px;
+    height: 50px;
+}
+
+section#resume {
+    background: rgb(197, 83, 230) no-repeat center center/cover;
+}
+
+section#resume embed {
+    margin-top: 100px;
+    
+    border-width: 5px;
     border-color: black;
 
 
 }
 
 
-section#contact {
+/* section#contact {
     background: rgb(247, 199, 235) no-repeat center center/cover;
-}
+} */
