@@ -5,7 +5,9 @@
         <head>
             <title>Welcome</title>
 
-            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="style/github-repo-card.css">
+            <link rel="stylesheet" href="style/index.css">
+            
 
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +35,9 @@
                  <section id="home">
 
                     <h1>
-                        Kobe Kimmes
+                        &#x1F44B; Hi! I'm Kobe
                     </h1>
+                    
                     <p>
                         This is where you can learn about the projects I've worked on, some skills I've devloped and get a chance to know me better. 
                     </p>
@@ -53,54 +56,84 @@
                  </section>
 
                  <section id="about">
+                    <div>
+                        <h1>
+                            About me
+                        </h1>
+                        <p id="about">
+                            I am a student at the Univeristy of Minnesota Twin Cities pursuing a B.S in Computer Science.
+                        </p>
+                    </div>
+                    <!-- <div id="root"></div>
+                    <script type="module" src="js/about.js"></script> -->
+                     <!-- <div>
+                    
+                         <h1>
+                            Education
+                        </h1>
+                        <ul>
+                            <li>
+                              <strong>University of Minnesota - Twin Cities</strong>
+                            </li>
+                            <li>
+                              <strong>B.S Computer Science</strong>
+                            </li>
+                            <li>
+                              <strong>2022-2025</strong>
+                            </li>
+                          </ul>
+                          <h1>
+                            Experience
+                        </h1>
+                        <ul>
+                            <li>
+                              <strong>University of Minnesota - Twin Cities</strong>
+                            </li>
+                            <ul>
+                                <li> Department of Computer Science and Engineering (CSENG) </li>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant (CSCI 1993)
+                                    </li>
+                                </ul>
+                                <li> Office of Information Technology (OIT) </li>
+                                <ul>
+                                    <li>
+                                        Service Desk Training Mentor
+                                    </li>
+                                    <li>
+                                        Service Desk Technician
+                                    </li>
+                                </ul>
+                            </ul>
+                          </ul>
+                    </div> -->
 
-                    <h1>
-                        About me
-                    </h1>
-                    <p>
-                        I am a student at the Univeristy of Minnesota Twin Cities pursuing 
-                        a B.S in Computer Science.
-                    </p>
-                    <li>
-                        <img class="iri-and-me" src="images/KobeKimmes.jpeg" alt="My dog Iris and I on the U of M giant chair located on the Twin Cities campus mall">
-                    </li>
+                
+                    <!-- <img class="iri-and-me" src="images/KobeKimmes.jpeg" alt="My dog Iris and I on the U of M giant chair located on the Twin Cities campus mall"> -->
+                    
                  </section>
 
                  <section id="projects">
 
-                    <!-- <h1> 
-                        Projects
-                    </h1> -->
 
+                    <github-repo-card owner="kobekimmes" repo="Emperor" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="Sapling" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="IrisCompiler" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="Raycaster.py" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="LibK" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="Softbody" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="CGOL" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="MazeGenerator" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="kobekimmes.github.io" img=""></github-repo-card>
+                    <github-repo-card owner="kobekimmes" repo="DiffusionSimulation" img=""></github-repo-card>
                     
-                    <div>
-                        <github-repo-card
-                            repo="kobekimmes/Emperor"
-                            theme="default"
-                            
-                        ></github-repo-card>
-                        <github-repo-card
-                            repo="kobekimmes/IrisCompiler"
-                            theme="default"
-                            
-                        
-                        ></github-repo-card>
-                    </div>
+                    <script type="module" src="js/github-repo-card.js"></script>
                     
-                    <!-- <div id="readme-content"></div> -->
+                    
+                    <div id="panel"></div>
+                    <script src="js/main.js"></script>
 
-                        <!-- <script>
-                        fetch('https://api.github.com/repos/kobekimmes/Emperor/readme')
-                            .then(response => response.json())
-                            .then(data => {
-                            const decodedContent = atob(data.content); // Decode Base64-encoded content
-                            document.getElementById('readme-content').innerHTML = decodedContent;
-                            })
-                            .catch(error => {
-                            console.error('Error fetching README:', error);
-                            });
-                        </script> -->
-                    
                  </section>
 
                  <section id="resume">
@@ -130,7 +163,7 @@
             </div>
             <script src="https://cdn.jsdelivr.net/npm/@github-widgets/repo-card@1.0.0/dist/index.min.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-            <script src="main.js"></script>
+            <script src="js/main.js"></script>
         </body>
 
 

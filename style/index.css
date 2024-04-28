@@ -85,7 +85,7 @@ section li button {
     font-size: 45px;
     border: 0;
     background: none;
-    transition: opacity scale 0.2s;
+    transition: opacity transform 1s;
 
 }
 
@@ -129,21 +129,22 @@ section#about {
     display: flex;
     flex-direction: column;
     /* align-items: right; */
-    justify-content: center;
+    /* justify-content: center; */
     /* text-align: left; */
 
 
 }
 
 section#about h1 {
-    text-align: left;
+    margin-top: 20%;
+    text-align: center;
     /* padding-right: 20%; */
 
     
 }
 
 section#about p {
-    text-align: left;
+    text-align: center;
     /* width: 20%; */
     font-size: 1.5rem;
 
@@ -174,15 +175,20 @@ section#about img {
 
 section#projects {
     background: rgb(197, 83, 220) no-repeat center center/cover;
+    justify-content: center;
+    align-items: left;
+    /* flex-direction: column; */
+    gap: 20px; /* Add space between each item */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-section#projects#panel {
+/* section#projects#panel {
     width: 400px;
     height: 300px;
     background-color: lightgray;
     border: 2px solid gray;
 
-}
+} */
 
 section#resume {
     background: rgb(197, 83, 230) no-repeat center center/cover;
@@ -193,7 +199,6 @@ section#resume embed {
     align-self: center;
     border-width: 5px;
     border-color: black;
-
 
 }
 
