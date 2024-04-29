@@ -175,12 +175,38 @@ section#about img {
 
 section#projects {
     background: rgb(197, 83, 220) no-repeat center center/cover;
+    /* display: flex; */
+
+
     justify-content: center;
-    align-items: left;
+    align-items: center;
     /* flex-direction: column; */
-    gap: 20px; /* Add space between each item */
+    /* gap: auto; Add space between each item */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
+
 }
+
+
+section#projects h1 {
+    text-align: center;
+}
+
+section#projects div {
+    width: 80%;
+    height: 30%;
+    margin-top: 8%;
+    margin-bottom: auto;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* align-self: auto; */
+    align-items: center;
+    gap: 1%;
+    /* flex-wrap: wrap; Allow items to wrap to the next line */
+}
+
+
 
 /* section#projects#panel {
     width: 400px;
@@ -192,13 +218,17 @@ section#projects {
 
 section#resume {
     background: rgb(197, 83, 230) no-repeat center center/cover;
+    justify-content: center;
 }
 
 section#resume embed {
+    align-content: center;
     margin-top: 5%;
     align-self: center;
     border-width: 5px;
     border-color: black;
+    justify-self: center;
+    
 
 }
 

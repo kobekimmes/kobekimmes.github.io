@@ -7,7 +7,7 @@ class GHRepoCard extends HTMLElement {
         const root = this.attachShadow({ mode: 'open' });
         const styleLink = document.createElement('link');
         styleLink.setAttribute('rel', 'stylesheet');
-        styleLink.setAttribute('href', '../style/github-repo-card.css');
+        styleLink.setAttribute('href', 'github-repo-card/github-repo-card.css');
 
         // Append the link element to the shadow root
         root.appendChild(styleLink);
@@ -34,45 +34,28 @@ class GHRepoCard extends HTMLElement {
                 repoDescription.textContent = repoData.description;
 
                 const usrImg = document.createElement('img');
-                usrImg.src = repoData.owner.avatar_url;
-                // usrImg.style.borderRadius = "50%";
-                // usrImg.style.objectFit = "contain";
-                // usrImg.style.height = "3vh";
+                usrImg.src = repoData.owner.avatar_url
                 usrImg.classList.add('user-image');
                 
                 const repoImg = document.createElement('img');
                 repoImg.alt = "Custom image";
                 repoImg.src = img;
-                // repoImg.style.objectFit = "contain";
-                // repoImg.style.borderRadius = "30%";
-                // repoImg.style.height = "20vh";
-                // repoImg.style.width = "50%";
                 repoImg.classList.add('repo-image');
                 
-
-
                 const repoLink = document.createElement('a');
                 repoLink.href = repoData.html_url;
                 repoLink.target = '_blank';
                 repoLink.style.textDecoration = 'none'; // Remove underline
-                //repoLink.style.color = 'transparent'; // Hide text
-                // repoLink.style.width = '100%';
-                // repoLink.style.height = '100%';
-                // repoLink.style.position = 'relative';
-                // repoLink.style.top = '0';
-                // repoLink.style.left = '0';
+            
                 repoLink.classList.add('repo-link');
-
 
 
                 // Append elements to the root
                 container.appendChild(repoName);
+                container.appendChild(usrImg);
                 container.appendChild(repoDescription);
                 container.appendChild(repoImg);
-                container.appendChild(usrImg);
-                
                 container.appendChild(repoLink);
-
 
                 container.addEventListener('click', (event) => {
                     
