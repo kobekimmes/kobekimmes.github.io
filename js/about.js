@@ -6,7 +6,7 @@ const Experience = ({ title, items }) => (
     <ul>
       {items.map((item, index) => (
         <li key={index}>
-          <strong>{item.label}:</strong> {item.value}
+          {item.value}
         </li>
       ))}
     </ul>
@@ -40,6 +40,7 @@ const App = () => {
   },
   { title: 'Work Experience3',
     items: [
+      { label: 'Company', value: 'Office of Information Technology' },
       { label: 'Position', value: 'Service Desk Technician' },
       { label: 'Dates', value: '2023 - 2024' },
     ],
