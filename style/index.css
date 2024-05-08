@@ -126,13 +126,21 @@ section#home p {
 
 section#about {
     background: rgb(197, 83, 210) no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     /* align-items: right; */
     /* justify-content: center; */
     /* text-align: left; */
+    align-items: right;
 
 
+}
+
+section#about div {
+    align-self: right;
+    width: 50%;
+    align-content: center;
+    /* justify-content: center; */
 }
 
 section#about h1 {
@@ -144,11 +152,9 @@ section#about h1 {
 }
 
 section#about p {
-    text-align: center;
-    /* width: 20%; */
+    /* text-align: center; */
+    /* width: 40%; */
     font-size: 1.5rem;
-
-    
    
 }
 
@@ -180,6 +186,7 @@ section#projects {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    column-gap: 1%;
     /* flex-direction: column; */
     /* gap: auto; Add space between each item */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
