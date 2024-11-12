@@ -174,7 +174,7 @@ section::before {
 }
 
 #home > div #scroll div {
-    margin-left: 15rem;
+    margin-left: 10rem;
     display: flex;
     background-color: var(--primary-dark);
     flex-direction: column;
@@ -221,10 +221,12 @@ section::before {
 }
 
 #home > div #greeting {
+    display: block;
     margin-top: 10rem;
-    max-width: 30rem;
+    max-width: 40rem;
     position: relative;
     gap: 2rem;
+
 }
 
 
@@ -256,7 +258,7 @@ section::before {
     width: 18rem;
     /* max-width: 100%; */
     margin-top: 10rem;
-    height: 25rem;
+    height: auto;
     border-radius: 2rem;
     border: 0.2rem solid var(--primary-dark);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
