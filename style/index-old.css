@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    line-height: 1.6;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position:fixed;
+    /* padding-top: 2%;
+    padding-bottom: 2%; */
+    top: 0;
+    z-index: 1;
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background: rgba(0,0,0);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.navbar ul li {
+    margin: 1 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.navbar ul li a:hover {
+    color: plum;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+
+
+#greeting {
+    width: 50%;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 15%;
+}
+
+#greeting .socials {
+    list-style: none;
+}
+
+
+#home #greeting .socials button {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    transition: opacity transform 1s;
+
+}
+
+#home #greeting .socials button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+#home #greeting .socials button:active {
+    opacity: 0.4;
+
+}
+
+section h1 {
+    font-size: 2rem;
+    width: 50%;
+}
+
+section#greeting p {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
+section#home {
+    background: rgb(197, 83, 200) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    text-align: left;
+
+    
+
+}
+
+section#home div {
+    margin-left: 15%;
+    left: 25%;
+    align-items: left;
+    align-self: center;
+
+}
+
+
+
+section#home p {
+    /* margin-left: 15%; */
+    width: 35%
+}
+
+
+section#about {
+    background: rgb(197, 83, 210) no-repeat center center/cover;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: right; */
+    /* justify-content: center; */
+    /* text-align: left; */
+    align-items: right;
+
+
+}
+
+section#about div {
+    align-self: right;
+    width: 50%;
+    align-content: center;
+    /* justify-content: center; */
+}
+
+section#about h1 {
+    margin-top: 20%;
+    text-align: center;
+    /* padding-right: 20%; */
+
+    
+}
+
+section#about p {
+    /* text-align: center; */
+    /* width: 40%; */
+    font-size: 1.5rem;
+   
+}
+
+
+section#about img {
+    position: relative;
+    /* top: 30%; */
+    right: 20%; 
+    bottom: 10%;
+    /* width: 40vh; */
+    height: 50vh;
+    object-fit: contain;
+    align-self: left;
+    /* align-items: left;
+    align-content: left; */
+    /*text-align: left; */
+
+    /* border-width: 5px;
+    border-color: black; */
+    
+}
+
+
+
+section#projects {
+    background: rgb(197, 83, 220) no-repeat center center/cover;
+    /* display: flex; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+    /* flex-direction: column; */
+    /* gap: auto; Add space between each item */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+
+}
+
+
+section#projects h2 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section#projects div {
+    width: 80%;
+    height: 30%;
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* align-self: auto; */
+    align-items: center;
+    gap: 1%;
+    /* flex-wrap: wrap; Allow items to wrap to the next line */
+}
+
+
+
+/* section#projects#panel {
+    width: 400px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid gray;
+
+} */
+
+section#resume {
+    background: rgb(197, 83, 230) no-repeat center center/cover;
+    justify-content: center;
+}
+
+section#resume embed {
+    align-content: center;
+    margin-top: 5%;
+    align-self: center;
+    border-width: 5px;
+    border-color: black;
+    justify-self: center;
+    
+
+}
+
+
+/* section#contact {
+    background: rgb(247, 199, 235) no-repeat center center/cover;
+} */
